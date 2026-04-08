@@ -1,14 +1,5 @@
-import {test as base, expect} from "@playwright/test";
+import {expect, test} from "./fixtures";
 
-const test = base.extend({
-  page: async ({page}, use) => {
-    await page.goto("https://otter.ai/");
-    await use(page);
-    await page.context().close();
-  },
+test("has title", async ({otterPage}) => {
+  await expect(otterPage).toHaveTitle(/Otter/);
 });
-
-test("has title", async ({page}) => {
-  await expect(page).toHaveTitle(/Otter/);
-});
-
