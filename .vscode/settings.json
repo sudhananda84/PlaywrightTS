@@ -1,0 +1,12 @@
+{
+    "javascript.suggest.includeAutomaticOptionalChainCompletions": false,
+    "javascript.suggest.enabled": true,
+    "typescript.suggest.enabled": true,
+    "typescript.suggest.includeAutomaticOptionalChainCompletions": false,
+    "editor.inlineSuggest.enabled": false,
+    "editor.quickSuggestions": {
+        "other": "off"
+    },
+    "editor.suggest.showSnippets": false,
+    "typescript.suggest.objectLiteralMethodSnippets.enabled": true
+}
